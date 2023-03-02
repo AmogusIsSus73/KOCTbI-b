@@ -2,7 +2,7 @@ package src;
 
 public class test5 {
     public static void main(String[] args) {
-        String str = "qweeukfgeeeet";
+        String str = "qweeukfgeeeetqwertyuioppp";
         String str1 = "";
         String max = "";
         int k = str.length();
@@ -12,13 +12,14 @@ public class test5 {
             if (i == k - 2) {
                 if (str.charAt(i) != str.charAt(k-1)) {
                     str1 += str.charAt(i);
-                    str1 += str.charAt(k-1);
+                    str1 += str.charAt(k - 1);
+                }
                     if (max.length() < str1.length()) {
+                        str1 += str.charAt(i);
                         max = str1;
                     }
+                    break;
                 }
-                break;
-            }
 
             char result2 = str.charAt(i + 1);
                 if (result1 != result2) {
